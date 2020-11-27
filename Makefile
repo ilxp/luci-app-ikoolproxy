@@ -1,8 +1,8 @@
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=luci-app-koolproxyR
+PKG_NAME:=luci-app-ledeproxy
 PKG_VERSION:=3.8.5
-PKG_RELEASE:=1-20201105
+PKG_RELEASE:=1-20201126
 
 PKG_MAINTAINER:=panda-mute <wxuzju@gmail.com>
 PKG_LICENSE:=GPLv3
@@ -14,23 +14,23 @@ RSTRIP:=true
 
 include $(INCLUDE_DIR)/package.mk
 
-define Package/luci-app-koolproxyR
+define Package/luci-app-ledeproxy
 	SECTION:=luci
 	CATEGORY:=LuCI
 	SUBMENU:=3. Applications
-	TITLE:=LuCI support for koolproxyR
+	TITLE:=LuCI support for ledeproxy
 	DEPENDS:=+openssl-util +ipset +dnsmasq-full +@BUSYBOX_CONFIG_DIFF +iptables-mod-nat-extra +wget
 	MAINTAINER:=panda-mute
 endef
 
-define Package/luci-app-koolproxyR/description
+define Package/luci-app-ledeproxy/description
 	This package contains LuCI configuration pages for koolproxy.
 endef
 
 define Build/Compile
 endef
 
-define Package/luci-app-koolproxyR/postinst
+define Package/luci-app-ledeproxy/postinst
 #!/bin/sh
 if [ -z "$${IPKG_INSTROOT}" ]; then
 	( . /etc/uci-defaults/luci-koolproxy ) && rm -f /etc/uci-defaults/luci-koolproxy
@@ -39,7 +39,7 @@ fi
 exit 0
 endef
 
-define Package/luci-app-koolproxyR/install
+define Package/luci-app-ledeproxy/install
 	$(INSTALL_DIR) $(1)/usr/lib/lua/luci
 	cp -pR ./luasrc/* $(1)/usr/lib/lua/luci
 	$(INSTALL_DIR) $(1)/
@@ -67,4 +67,4 @@ ifeq ($(ARCH),aarch64)
 endif
 endef
 
-$(eval $(call BuildPackage,luci-app-koolproxyR))
+$(eval $(call BuildPackage,luci-app-ledeproxy))
