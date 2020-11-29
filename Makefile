@@ -39,7 +39,7 @@ fi
 exit 0
 endef
 
-define Package/luci-app-koolproxyR/conffiles
+define Package/luci-app-ledeproxy/conffiles
 	/etc/config/koolproxy
 	/usr/share/koolproxy/data/rules/
 endef
