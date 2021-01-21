@@ -48,14 +48,23 @@ opkg install openssl-util ipset dnsmasq-full diffutils iptables-mod-nat-extra wg
 懒人版本，在.config文件里添加如下代码：
 
 #koolproxy支持
+
 CONFIG_PACKAGE_iptables-mod-nat-extra=y
+
 CONFIG_PACKAGE_kmod-ipt-extra=y
+
 CONFIG_PACKAGE_diffutils=y
+
 CONFIG_PACKAGE_openssl-util=y
+
 CONFIG_PACKAGE_dnsmasq-full=y
+
 CONFIG_PACKAGE_ca-bundle=y
+
 CONFIG_PACKAGE_ca-certificates=y
+
 CONFIG_PACKAGE_libustream-openssl=y
+
 CONFIG_PACKAGE_lua-openssl=y
 
 
