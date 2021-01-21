@@ -1,5 +1,8 @@
+## 更名声明：
+原ledeproxy，于2020年底更名为 GodProxy。特此知晓，以前的规则更新链接会失效！
+
 ## 整理声明：
-ledeproxy是基于koolproxyR Plus+重新整理而来。主要参考：
+GodProxy是基于koolproxyR Plus+重新整理而来。主要参考：
 
 1、以前Ameykyl大神的[KoolProxyR Plus+](https://github.com/Ameykyl/luci-app-koolproxyR) (源码已经2020年4月删除）。源码来源于[project-openwrt](https://github.com/project-openwrt/luci-app-koolproxyR)收录的ameykyl的2020年3月最后一次更新。 
 
@@ -7,9 +10,9 @@ ledeproxy是基于koolproxyR Plus+重新整理而来。主要参考：
 
 2、感谢koolproxy官方组、shaoxia、Ameykyl、project-openwrt组、Beginner-Go等的无私奉献！
 
-3、规则来源于[ledeproxy](https://github.com/ledewrt/LedeProxy) 。
+3、规则来源于[GodProxy](https://github.com/godros/GodProxy) 。
 
-## 本来是完全没有必要再造一个的，因为浪费时间。但各位大神都好久没有更新了，有些规则更新需要翻墙，有些名字是KP，有些事KPR，KPR Plus，KPR Plus+。所以没有办法，只能暂且叫LedeProxy。望理解！
+## 本来是完全没有必要再造一个的，因为浪费时间。但各位大神都好久没有更新了，有些规则更新需要翻墙，有些名字是KP，有些事KPR，KPR Plus，KPR Plus+。所以没有办法，只能暂且叫GodProxy。望理解！
 
 
 ## 免责声明：
@@ -19,7 +22,7 @@ KoolProxy 可以对 https 网络数据进行识别代理，使用 https 功能�
 
 ## 1、前言
 感謝 koolshare.cn 提供 KoolProxy, 使用风险由用户自行承担
-本程序运行需要联网下载最新的 KoolProxy 到内存中运行, 也正因此本程序大小可以忽略不计.为了区分，暂且更名为：LedeProxy
+本程序运行需要联网下载最新的 KoolProxy 到内存中运行, 也正因此本程序大小可以忽略不计.为了区分，暂且更名为：GodProxy
 
 ## 2、简介
 本软件包是 KoolProxy 的 LuCI 控制界面,
@@ -39,7 +42,20 @@ opkg install openssl-util ipset dnsmasq-full diffutils iptables-mod-nat-extra wg
 
 如果没有 iptables-mod-nat-extra ，会导致mac过滤失效！
 
-如果没有 wget, ca-bundle, ca-certificates, libustream-openssl ，会导致规则文件更新失败，host规则条数变为0,如果你的固件的busybox带有支持https的wget，那么这几个包可以不安装。
+如果没有 wget, ca-bundle, ca-certificates, libustream-openssl，lua-openssl，会导致规则文件更新失败，host规则条数变为0,如果你的固件的busybox带有支持https的wget，那么这几个包可以不安装。
+
+
+懒人版本，在.config文件里添加如下代码：
+#koolproxy支持
+CONFIG_PACKAGE_iptables-mod-nat-extra=y
+CONFIG_PACKAGE_kmod-ipt-extra=y
+CONFIG_PACKAGE_diffutils=y
+CONFIG_PACKAGE_openssl-util=y
+CONFIG_PACKAGE_dnsmasq-full=y
+CONFIG_PACKAGE_ca-bundle=y
+CONFIG_PACKAGE_ca-certificates=y
+CONFIG_PACKAGE_libustream-openssl=y
+CONFIG_PACKAGE_lua-openssl=y
 
 
 ## 5、配置, 
@@ -47,7 +63,7 @@ opkg install openssl-util ipset dnsmasq-full diffutils iptables-mod-nat-extra wg
 此文件为 UCI 配置文件, 配置方式可参考 Wiki -> Use-UCI-system 和 OpenWrt Wiki
 
 ## 6、编译
-git clone https://github.com/lede/luci-app-ledeproxy.git package/luci-app-ledeproxy
+git clone https://github.com/godros/luci-app-godproxy.git package/luci-app-godproxy
 
 make && sudo make install
 
@@ -57,7 +73,7 @@ make menuconfig
 
 开始编译
 
-make package/feeds/luci-app-ledeproxy/compile V=s
+make package/feeds/luci-app-godproxy/compile V=s
 
 # 7、关于IPv6支持(基于透明代理一刀切)
 需要在防火墙添加一条规则：
@@ -83,32 +99,32 @@ iptables -t nat -L PREROUTING
 
 ### 8、内置规则列表
 
-[静态规则](https://gitee.com/ledewrt/ledeproxy/raw/master/rules/koolproxy.txt)
+[静态规则](https://gitee.com/godros/godproxy/raw/master/rules/koolproxy.txt)
 
-[每日规则](https://gitee.com/ledewrt/ledeproxy/raw/master/rules/daily.txt)
+[每日规则](https://gitee.com/godros/godproxy/raw/master/rules/daily.txt)
 
-[视频规则](https://gitee.com/ledewrt/ledeproxy/raw/master/rules/kp.dat)
+[视频规则](https://gitee.com/godros/godproxy/raw/master/rules/kp.dat)
 
-[ipset](https://gitee.com/ledewrt/ledeproxy/raw/master/ipsetadblock/koolproxy_ipset.conf)
+[ipset](https://gitee.com/godros/godproxy/raw/master/ipsetadblock/koolproxy_ipset.conf)
 
-[adblock](https://gitee.com/ledewrt/ledeproxy/raw/master/ipsetadblock/dnsmasq.adblock)
+[adblock](https://gitee.com/godros/godproxy/raw/master/ipsetadblock/dnsmasq.adblock)
 
 ### 9、第三方规则（已做了转换，koolproxy能识别，不要用乘风大神的通用规则，会导致koolproxy停止运行）
 
-[ABP规则](https://gitee.com/ledewrt/ledeproxy/raw/master/rules/easylistchina.txt) 
+[ABP规则](https://gitee.com/godros/godproxy/raw/master/rules/easylistchina.txt) 
 
 （ABP规则是CJX's Annoyance List+China+EasyList的二合一规则） 注：CJX's Annoyance List (反自我推广,移除anti adblock,防跟踪规则列表)是"EasyList China+EasyList" & "EasyPrivacy"的补充）
 
-[Yhosts规则](https://gitee.com/ledewrt/ledeproxy/raw/master/rules/yhosts.txt)
+[Yhosts规则](https://gitee.com/godros/godproxy/raw/master/rules/yhosts.txt)
 
-[Fanboy规则](https://ledewrt.coding.net/p/ledeproxy/d/rulebin/git/raw/master/rules/fanboy.txt)
+[Fanboy规则](https://godros.coding.net/p/godproxy/d/rulebin/git/raw/master/rules/fanboy.txt)
 
-[AntiAD规则](https://gitee.com/ledewrt/ledeproxy/raw/master/rules/antiad.txt)
+[AntiAD规则](https://gitee.com/godros/godaproxy/raw/master/rules/antiad.txt)
 
-[乘风视频](https://gitee.com/ledewrt/ledeproxy/raw/master/rules/mv.txt)
+[乘风视频](https://gitee.com/godros/godproxy/raw/master/rules/mv.txt)
 
 ### 10、订阅规则（user1121114685大神和某位大神（忘记名字了）整合而成，能过滤youtube等）
 
-[订阅规则](https://gitee.com/ledewrt/ledeproxy/raw/master/rules/kpr_our_rule.txt)
+[订阅规则](https://gitee.com/godros/godproxy/raw/master/rules/kpr_our_rule.txt)
 
 ### 首次运行koolproxy的时候，保存并提交速度较慢，因为会生成证书。
