@@ -129,7 +129,7 @@ iptables -t nat -L PREROUTING
 
 [Fanboy规则](https://godros.coding.net/p/godproxy/d/rulebin/git/raw/master/rules/fanboy.txt)
 
-[AntiAD规则](https://gitee.com/godros/godaproxy/raw/master/rules/antiad.txt)
+[AntiAD规则](https://gitee.com/godros/godproxy/raw/master/rules/antiad.txt)
 
 [乘风视频](https://gitee.com/godros/godproxy/raw/master/rules/mv.txt)
 
