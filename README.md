@@ -1,5 +1,5 @@
 ## 更名声明：
-原ledeproxy，于2020年底更名为 GodProxy。特此知晓，以前的规则更新链接会失效！
+原ledeproxy，于2021年1月21日更名为 GodProxy。特此知晓，以前的规则更新链接会失效！
 
 ## 整理声明：
 GodProxy是基于koolproxyR Plus+重新整理而来。主要参考：
@@ -46,6 +46,7 @@ opkg install openssl-util ipset dnsmasq-full diffutils iptables-mod-nat-extra wg
 
 
 懒人版本，在.config文件里添加如下代码：
+
 #koolproxy支持
 CONFIG_PACKAGE_iptables-mod-nat-extra=y
 CONFIG_PACKAGE_kmod-ipt-extra=y
