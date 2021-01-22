@@ -1,6 +1,6 @@
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=luci-app-godproxy
+PKG_NAME:=luci-app-god_koolproxy
 PKG_VERSION:=3.8.5
 PKG_RELEASE:=1-20210121
 
@@ -14,7 +14,7 @@ RSTRIP:=true
 
 include $(INCLUDE_DIR)/package.mk
 
-define Package/luci-app-godproxy
+define Package/luci-app-god_koolproxy
 	SECTION:=luci
 	CATEGORY:=LuCI
 	SUBMENU:=3. Applications
@@ -30,7 +30,7 @@ endef
 define Build/Compile
 endef
 
-define Package/luci-app-godproxy/postinst
+define Package/luci-app-god_koolproxy/postinst
 #!/bin/sh
 if [ -z "$${IPKG_INSTROOT}" ]; then
 	( . /etc/uci-defaults/luci-koolproxy ) && rm -f /etc/uci-defaults/luci-koolproxy
@@ -39,7 +39,7 @@ fi
 exit 0
 endef
 
-define Package/luci-app-godproxy/conffiles
+define Package/luci-app-god_koolproxy/conffiles
 	/etc/config/koolproxy
 	/usr/share/koolproxy/data/rules/
 endef
@@ -73,4 +73,4 @@ ifeq ($(ARCH),aarch64)
 endif
 endef
 
-$(eval $(call BuildPackage,luci-app-godproxy))
+$(eval $(call BuildPackage,luci-app-god_koolproxy))
