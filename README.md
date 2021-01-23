@@ -1,5 +1,5 @@
 ## 更名声明：
-原ledeproxy，于2021年1月21日更名为 GodProxy。特此知晓，以前的规则更新链接会失效！
+原ledeproxy，于2021年1月23日更名为 GodProxy。特此知晓，以前的规则更新链接会失效！
 
 ## 整理声明：
 GodProxy是基于koolproxyR Plus+重新整理而来。主要参考：
