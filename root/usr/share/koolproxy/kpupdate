@@ -116,7 +116,7 @@ update_rules() {
 		 wget 'https://raw.githubusercontent.com/project-lede/koolproxyrule/main/rules/koolproxy.txt' -q -O $KP_DIR/data/rules/koolproxy.txt
 	         wget 'https://raw.githubusercontent.com/project-lede/koolproxyrule/main/rules/yhosts.txt' -q -O $KP_DIR/data/rules/yhosts.txt
             	 wget 'https://raw.githubusercontent.com/project-lede/koolproxyrule/main/rules/fanboy.txt' -q -O $KP_DIR/data/rules/fanboy.txt
-	         wget 'https://raw.githubusercontent.com/project-lede/koolproxyrule/main/rules/easylistchina.txt ' -q -O $KP_DIR/data/rules/easylistchina.txt
+	         wget 'https://raw.githubusercontent.com/project-lede/koolproxyrule/main/rules/easylistchina.txt' -q -O $KP_DIR/data/rules/easylistchina.txt
 		 wget 'https://raw.githubusercontent.com/project-lede/koolproxyrule/main/rules/antiad.txt' -q -O $KP_DIR/data/rules/anti-ad.txt
             	 wget 'https://raw.githubusercontent.com/project-lede/koolproxyrule/main/rules/mv.txt' -q -O $KP_DIR/data/rules/mv.txt
 		 wget 'https://raw.githubusercontent.com/project-lede/koolproxyrule/main/ipsetadblock/koolproxy_ipset.conf' -q -O $KP_DIR/koolproxy_ipset.conf
