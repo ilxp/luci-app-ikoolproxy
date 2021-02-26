@@ -109,32 +109,23 @@ iptables -t nat -L PREROUTING
 
 ### 8、内置规则列表
 
-[静态规则](https://gitee.com/godros/godproxy/raw/master/rules/koolproxy.txt)
-
-[每日规则](https://gitee.com/godros/godproxy/raw/master/rules/daily.txt)
-
-[视频规则](https://gitee.com/godros/godproxy/raw/master/rules/kp.dat)
-
-[ipset](https://gitee.com/godros/godproxy/raw/master/ipsetadblock/koolproxy_ipset.conf)
-
-[adblock](https://gitee.com/godros/godproxy/raw/master/ipsetadblock/dnsmasq.adblock)
+[静态规则]   [每日规则]   [视频规则]   [ipse]   [adblock]
 
 ### 9、第三方规则（已做了转换，koolproxy能识别，不要用乘风大神的通用规则，会导致koolproxy停止运行）
 
-[ABP规则](https://gitee.com/godros/godproxy/raw/master/rules/easylistchina.txt) 
-
+[ABP规则]
 （ABP规则是CJX's Annoyance List+China+EasyList的二合一规则） 注：CJX's Annoyance List (反自我推广,移除anti adblock,防跟踪规则列表)是"EasyList China+EasyList" & "EasyPrivacy"的补充）
 
-[Yhosts规则](https://gitee.com/godros/godproxy/raw/master/rules/yhosts.txt)
+[Yhosts规则]
 
-[Fanboy规则](https://god-ros.coding.net/p/godproxy/d/rulebin/git/raw/master/rules/fanboy.txt)
+[Fanboy规则]
 
-[AntiAD规则](https://gitee.com/godros/godproxy/raw/master/rules/antiad.txt)
+[AntiAD规则]
 
-[乘风视频](https://gitee.com/godros/godproxy/raw/master/rules/mv.txt)
+[乘风视频]
 
 ### 10、订阅规则（user1121114685大神和某位大神（忘记名字了）整合而成，能过滤youtube等）
 
-[订阅规则](https://gitee.com/godros/godproxy/raw/master/rules/kpr_our_rule.txt)
+[订阅规则]
 
 ### 首次运行koolproxy的时候，保存并提交速度较慢，因为会生成证书。
