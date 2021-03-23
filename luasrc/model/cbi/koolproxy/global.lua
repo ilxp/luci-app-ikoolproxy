@@ -27,12 +27,14 @@ local i=luci.sys.exec("cat /usr/share/koolproxy/dnsmasq.adblock | wc -l")
 
 
 if luci.sys.call("pidof koolproxy >/dev/null") == 0 then
-	status = translate("<strong><font color=\"green\">GodProxy滤广告  运行中</font></strong>")
+	status = translate("<strong class=\"koolproxy_status\"><font color=\"green\">GodProxy滤广告  运行中</font></strong>")
 else
-	status = translate("<strong><font color=\"red\">GodProxy滤广告  已停止</font></strong>")
+	status = translate("<strong class=\"koolproxy_status\"><font color=\"red\">GodProxy滤广告  未运行</font></strong>")
 end
 
 o = Map("koolproxy", translate("GodProxy滤广告 "), translate("GodProxy是基于KoolProxyR Plus重新整理的能识别adblock规则的免费开源软件,追求体验更快、更清洁的网络，屏蔽烦人的广告！"))
+
+o.template="koolproxy/koolproxy_status"
 t = o:section(TypedSection, "global")
 t.anonymous = true
 t.description = translate(string.format("%s<br /><br />", status))

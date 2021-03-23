@@ -1,5 +1,8 @@
+## 更新：2021年3月23日：
+感谢 [maple's sky](https://github.com/maplesky) 大佬提供技术支持，修复状态栏不动态问题。
+
 ## 更新：2021年3月4日：
-感谢xiaoqi2020提供，选择规则托管国内。
+感谢 [xiaoqi2020](https://github.com/xiaoqi2020) 提供，选择规则托管国内。
 
 ## 更新：2021年2月26日（元宵）：
 原来的码云以及coding规则已经无法获取（被封）了。现在托管在github上。
@@ -14,9 +17,9 @@ GodProxy是基于koolproxyR Plus+重新整理而来。主要参考：
 
 2、新的目录来源[Beginner-Go](https://github.com/Beginner-Go/luci-app-koolproxyR)  
 
-2、感谢koolproxy官方组、shaoxia、Ameykyl、project-openwrt组、Beginner-Go等的无私奉献！
+3、感谢koolproxy官方组、shaoxia、Ameykyl、project-openwrt组、Beginner-Go等的无私奉献！
 
-3、规则来源于[GodProxy](https://github.com/godros/GodProxy) 。
+4、规则来源于[GodProxy](https://github.com/godros/GodProxy) 。
 
 ## 本来是完全没有必要再造一个的，因为浪费时间。但各位大神都好久没有更新了，有些规则更新需要翻墙，有些名字是KP，有些事KPR，KPR Plus，KPR Plus+。所以没有办法，只能暂且叫GodProxy。望理解！
 
