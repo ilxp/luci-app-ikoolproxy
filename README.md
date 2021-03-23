@@ -21,7 +21,7 @@ GodProxy是基于koolproxyR Plus+重新整理而来。主要参考：
 
 4、规则来源于[GodProxy](https://github.com/godros/GodProxy) 。
 
-## 本来是完全没有必要再造一个的，因为浪费时间。但各位大神都好久没有更新了，有些规则更新需要翻墙，有些名字是KP，有些事KPR，KPR Plus，KPR Plus+。所以没有办法，只能暂且叫GodProxy。望理解！
+## 本来是完全没有必要再造一个的，因为浪费时间。但各位大神都好久没有更新了，有些规则更新需要翻墙，有些名字是KP，有些是KPR，KPR Plus，KPR Plus+。所以没有办法，只能暂且叫GodProxy。望理解！
 
 
 ## 免责声明：
