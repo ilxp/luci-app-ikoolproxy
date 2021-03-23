@@ -2,7 +2,7 @@
 感谢 [maple's sky](https://github.com/maplesky) 大佬提供技术支持，修复状态栏不动态问题。
 
 ## 更新：2021年3月4日：
-感谢xiaoqi2020提供，选择规则托管国内。
+感谢 [xiaoqi2020](https://github.com/xiaoqi2020) 提供，选择规则托管国内。
 
 ## 更新：2021年2月26日（元宵）：
 原来的码云以及coding规则已经无法获取（被封）了。现在托管在github上。
