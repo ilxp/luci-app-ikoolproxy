@@ -9,7 +9,7 @@
 		function(x, result)
 		{
 			var status = document.getElementsByClassName('koolproxy_status');
-			status[0].innerHTML = result.koolproxy?'<font color=green><%=translate("GodProxy滤广告  运行中")%></font>':'<font color=red><%=translate("<font color=\"red\">GodProxy滤广告  未运行</font></strong>")%></font>';
+			status[0].innerHTML = result.running?'<font color=green><%=translate("GodProxy滤广告  运行中")%></font>':'<font color=red><%=translate("<font color=\"red\">GodProxy滤广告  未运行</font></strong>")%></font>';
 		}
 	);
 //]]>
