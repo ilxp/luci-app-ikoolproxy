@@ -1,3 +1,7 @@
+## 更新：2021年4月21日：
+感谢 [Beginner-Go](https://github.com/Beginner-Go) 大佬前面几次的升级。
+由于上游删除了bin二进制代码以及静态规则和每日规则。故默认取消每日规则和静态规则。
+
 ## 更新：2021年3月23日：
 感谢 [maple's sky](https://github.com/maplesky) 大佬提供技术支持，修复状态栏不动态问题。
 
