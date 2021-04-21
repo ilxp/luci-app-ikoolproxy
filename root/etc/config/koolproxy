@@ -5,7 +5,7 @@ config global
 	option koolproxy_acl_default '1'
 	option koolproxy_mode '1'
 	option koolproxy_host '1'
-	option koolproxy_rules 'user.txt'
+	option koolproxy_rules 'koolproxy.txt daily.txt kp.dat user.txt'
 	option thirdparty_rules 'anti-ad.txt'
 	option enabled '0'
 	option koolproxy_ipv6 '0'
