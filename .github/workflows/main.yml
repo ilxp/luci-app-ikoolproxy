@@ -39,7 +39,7 @@ jobs:
         git config --global user.name "lede-project"
         
     - name: Load upstream commits
-      run: git pull https://github.com/52014app/luci-app-godproxy.git --log --no-commit
+      run: git pull https://github.com/52014app/luci-app-godproxy.git
 
     - name: Apply commit changes
       run: |
