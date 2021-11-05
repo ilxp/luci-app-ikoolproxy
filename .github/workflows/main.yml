@@ -29,7 +29,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       with:
-        ref: 19.07
+        ref: 1
         fetch-depth: 0
         lfs: true
 
