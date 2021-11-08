@@ -225,7 +225,7 @@ load_rules() {
                         yhosts.txt)
 				sed -i '5s/0/1/g' $KP_DIR/data/source.list
 			;;
-			easylistchina.txt)
+			ABP.txt)
 				sed -i '6s/0/1/g' $KP_DIR/data/source.list
 			;;
 			fanboy.txt)
