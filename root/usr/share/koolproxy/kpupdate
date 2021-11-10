@@ -44,7 +44,7 @@ __compare_file() {
 	echo $(date "+%F %T"): ------------------- $descript更新 ------------------- >>$LOGFILE
 	local filename=`basename $localPath`
 	local remotePath="$TMP_DIR/$filename"
-	wget-ssl -qT5 --no-check-certificate "$remoteUrl" -O "$remotePath"
+	wget "$remoteUrl" -q -O "$remotePath"
 	if [ "$?" == "0" ]; then
 		if [ -f "$localPath" ]; then
 			localMD5=`md5sum "$localPath" | awk '{print $1}'`
