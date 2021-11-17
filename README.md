@@ -5,7 +5,7 @@ iKoolProxy是[Beginner-Go](https://github.com/Beginner-Go) 大神基于koolproxy
 
 2、感谢koolproxy官方组、shaoxia、Ameykyl、immortalwrt组、Beginner-Go等的无私奉献！
 
-3、规则来源于 [KoolProxy](https://github.com/godros/koolproxy) 。
+3、规则来源于 [KoolProxy](https://github.com/godros/koolproxy) 。在此特别鸣谢 [CatsTeam](https://github.com/Cats-Team/AdRules) ，因为ABP和Fanboy规则来源他们。
 
 ## 本来是完全没有必要再造一个的，因为浪费时间。但各位大神都好久没有更新了，有些规则更新需要翻墙，有些名字是KP，有些是KPR，KPR Plus，KPR Plus+。既然在koolproxy上整理而来就暂且叫iKoolProxy。望理解！
 
