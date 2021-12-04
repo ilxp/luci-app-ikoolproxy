@@ -14,5 +14,7 @@ define Package/$(PKG_NAME)/conffiles
 /etc/config/koolproxy
 /usr/share/koolproxy/data/rules/
 endef
+
 include $(TOPDIR)/feeds/luci/luci.mk
+
 # call BuildPackage - OpenWrt buildroot signature
