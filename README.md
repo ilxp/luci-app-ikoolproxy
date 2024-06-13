@@ -1,4 +1,7 @@
-## 无法下载证书声明：
+## How to build
+git clone -b main https://github.com/ilxp/luci-app-ikoolproxy.git package/diy/luci-app-ikoolproxy
+
+## 无法下载证书声明（2024.06.10版本已经解决此问题，感谢[Black-Steel](https://github.com/Black-Steel)）：
 目前因为openwrt的openssl升级为3.0了。导致ikoolproxy无法下载证书。lean大佬的lede可以回退。openwrt则不行。
 
 ## 整理声明：
@@ -61,7 +64,7 @@ CONFIG_PACKAGE_ca-bundle=y
 
 CONFIG_PACKAGE_ca-certificates=y
 
-CONFIG_PACKAGE_libustream-openssl=n  
+CONFIG_PACKAGE_libustream-openssl=y
 
 CONFIG_PACKAGE_lua-openssl=y
 
@@ -71,7 +74,7 @@ CONFIG_PACKAGE_lua-openssl=y
 此文件为 UCI 配置文件, 配置方式可参考 Wiki -> Use-UCI-system 和 OpenWrt Wiki
 
 ## 6、编译
-git clone https://github.com/1wrt/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
+git clone -b main https://github.com/ilxp/luci-app-ikoolproxy.git package/diy/luci-app-ikoolproxy
 
 make && sudo make install
 
